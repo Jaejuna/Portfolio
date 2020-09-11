@@ -81,8 +81,11 @@ ul{
     padding-left: 0;
 }
 
-.home_avatar{
-    width: 150px; height: 150px;
+button{
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 .Job_logo{
@@ -98,7 +101,9 @@ ul{
     padding: 15px;
 }
 .navbar_icon{
+    border-radius: 30%;
     width: 35px; height: 35px;
+    margin: 0 10px;
 }
 
 .navbar_menu{
@@ -106,6 +111,7 @@ ul{
 }
 
 .navbar_logo{
+    display: flex;
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold); 
     padding: 8px 12px;
@@ -124,4 +130,42 @@ ul{
 }   
 .navbar_menu_item:hover{
     background-color: var(--color-dark-pink);
+}
+
+/* home */
+#home{
+    background: url(img/MonSaintMichelle.jpg) center/cover no-repeat;
+    padding: 80px;
+    text-align: center;
+}
+
+.home_avatar{
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+
+.home_title,
+.home_description{
+    color: var(--color-white);
+}
+
+.home_contact{
+    color: var(--color-white);
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 1px white solid;
+    border-radius: var(--size-border-radius);
+}
+
+section{
+    padding: 50px;
+    text-align: center;
+}
+
+/* about */
+#about{
+
 }
