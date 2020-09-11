@@ -167,7 +167,7 @@ button{
     margin: auto;
 }
 .section_container{
-max-width: 1200px;
+max-width: 1300px;
 margin: auto;
 }
 
@@ -340,6 +340,7 @@ margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--color-light-white);
     width: 280px;
     height: 250px;
     margin: 2px;
