@@ -133,6 +133,15 @@ button{
     background-color: var(--color-dark-pink);
 }
 
+.navbar_toggle-btn{
+    position: absolute;
+    right: 32px;
+    top: 30px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+}
+
 /* home */
 #home{
     background: url(img/MonSaintMichelle.jpg) center/cover no-repeat;
@@ -455,4 +464,51 @@ margin: auto;
     transform: scale(1.3);
     color: var(--color-light-purple);
     transition: var(--animation-duration) ease-in;
+}
+
+@media screen and (max-width: 750px){
+    .navbar_toggle-btn{
+        display: block;
+    }
+
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .about_major{
+        flex-direction: column;
+    }
+    
+    .major{
+        margin-bottom: 30px;
+    }
+
+    .skillset{
+        flex-direction: column;
+    }
+
+    .project{
+        flex-grow: 1;
+    }
+
+    .testimonial_avatar{
+        width: 80px;
+        height: 100px;
+    }
+
+    .work_categories{
+        margin-bottom: 20px;
+    }
+
+    .category_btn, .category_btn.active{
+        margin-bottom: 20px;
+    }
 }
