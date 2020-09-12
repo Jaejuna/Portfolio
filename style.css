@@ -17,6 +17,7 @@
     --color-light-purple: #7e57c2; 
     --color-light-deep-purple: #b39ddb;
     --color-deep-purple: #4d2c91;
+    --color-purple-2: #9c27b0;
     
     /* font-size */
     --font-large: 48px;
@@ -156,7 +157,7 @@ button{
 
 /* home */
 #home{
-    background: url(img/MonSaintMichelle.jpg) center/cover no-repeat;
+    background: url(img/Rocamadou.jpg) center/cover no-repeat;
     padding: 80px;
     padding-top: 120px;
     text-align: center;
@@ -479,6 +480,24 @@ margin: auto;
     transition: var(--animation-duration) ease-in;
 }
 
+/* Scorll */
+.arrow-up {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 50px;
+    color: var(--color-light-purple);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 200ms ease-in;
+}
+
+.arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* For below 768px screen width */
 @media screen and (max-width: 750px){
     .navbar_toggle-btn{
         display: block;
