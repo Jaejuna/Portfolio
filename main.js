@@ -22,7 +22,6 @@ navbarMenu.addEventListener('click', (event) => {
         return;
     }
 
-    console.log(event.target.dataset.link);
     scrollIntoView(link);
 });
 
@@ -30,8 +29,20 @@ navbarMenu.addEventListener('click', (event) => {
 //Handle scrolling when tapping on the "contact me"
 const homeContactMe = document.querySelector('.home_contact');
 homeContactMe.addEventListener('click', () => {
+    
     scrollIntoView('#contact');
 });
+
+//Make "home" slowly fade out as scrolling down
+const home = document.querySelector('.home_container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () =>{
+    home.style.opacity = 1-window.scrollY / homeHeight;
+});
+
+
+
+
 
 //ScrollIntoView fucntion
 function scrollIntoView(selector) {
