@@ -111,7 +111,7 @@ button{
 
 #navbar.navbar_dark{
     background-color: var(--color-deep-purple);
-    padding: 8px;
+    padding: 16px;
 }
 
 .navbar_icon{
@@ -151,7 +151,7 @@ button{
 .navbar_toggle-btn{
     position: absolute;
     right: 32px;
-    top: 30px;
+    top: 24px;
     font-size: 24px;
     color: var(--color-white);
     display: none;
@@ -408,7 +408,7 @@ margin: auto;
 }
 
 .project_description h3{
-    color: var(--color-white);
+    color: var(--color-light-deep-purple);
 }
 
 .project_description h3:after{
@@ -417,8 +417,8 @@ margin: auto;
     position: relative;
     left: 50%;
     height: 2px;
-    width: 25px;
-    margin-left: -12px;
+    width: 50px;
+    transform: translateX(-50%);
     margin-top: 8px;
     background-color: var(--color-white);
 }
@@ -518,6 +518,7 @@ margin: auto;
     #navbar{
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-purple);
     }
 
     .navbar_menu{
@@ -525,6 +526,10 @@ margin: auto;
         text-align: center;
         width: 100%;
         display: none;
+    }
+
+    .navbar_menu.open{
+        display: block;
     }
 
     .about_major{
