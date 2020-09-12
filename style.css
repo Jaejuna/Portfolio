@@ -103,14 +103,14 @@ button{
     justify-content: space-between;
     background-color: transparent;
     color: var(--color-white);
-    padding: 15px;
+    padding: 10px;
     transition: all 250ms ease-in-out;
+    z-index: 1;
 }
 
 #navbar.navbar_dark{
     background-color: var(--color-deep-purple);
     padding: 8px;
-
 }
 
 .navbar_icon{
