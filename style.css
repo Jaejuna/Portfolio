@@ -15,6 +15,8 @@
     --color-black: #000000;
     --color-purple: #4d2c91;
     --color-light-purple: #7e57c2; 
+    --color-light-deep-purple: #b39ddb;
+    --color-deep-purple: #4d2c91;
     
     /* font-size */
     --font-large: 48px;
@@ -95,12 +97,22 @@ button{
 
 /* navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-pink);
+    background-color: transparent;
     color: var(--color-white);
     padding: 15px;
+    transition: all 250ms ease-in-out;
 }
+
+#navbar.navbar_dark{
+    background-color: var(--color-deep-purple);
+    padding: 8px;
+
+}
+
 .navbar_icon{
     border-radius: 40%;
     width: 35px; height: 35px;
@@ -146,6 +158,7 @@ button{
 #home{
     background: url(img/MonSaintMichelle.jpg) center/cover no-repeat;
     padding: 80px;
+    padding-top: 120px;
     text-align: center;
 }
 
